@@ -15,6 +15,8 @@
 InstallGlobalFunction( EgSeparatedString, function( str, c )
     local   pieces,  start,  i;
 
+    unbound_var := 1; 
+
     pieces := [];
     start := 1;
     for i in [1..Length(str)] do
