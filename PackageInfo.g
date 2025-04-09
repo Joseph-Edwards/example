@@ -250,7 +250,7 @@ AbstractHTML :=
 PackageDoc := rec(
   BookName  := "Example",
   ArchiveURLSubset := ["doc"],
-  HTMLStart := "doc/chap0_mj.html",
+  HTMLStart := "doc/chap0_mj_typo.html",
   PDFFile   := "doc/manual.pdf",
   # the path to the .six file used by GAP's help system
   SixFile   := "doc/manual.six",
