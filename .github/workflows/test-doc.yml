@@ -1,0 +1,33 @@
+name: doc
+
+# Trigger the workflow on push or pull request
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+
+jobs:
+  manual_1:
+    name: Warnings as errors
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gap-actions/setup-gap@v2
+      - uses: joseph-edwards/build-pkg-docs@refactor-action
+        with:
+          use-latex: "true"
+          warnings-as-errors: "true"
+  manual_2:
+    name: Not warnings as errors
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gap-actions/setup-gap@v2
+      - uses: joseph-edwards/build-pkg-docs@refactor-action
+        with:
+          use-latex: "true"
+          warnings-as-errors: "false"
