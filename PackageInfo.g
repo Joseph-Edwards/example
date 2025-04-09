@@ -251,9 +251,9 @@ PackageDoc := rec(
   BookName  := "Example",
   ArchiveURLSubset := ["doc"],
   HTMLStart := "doc/chap0_mj.html",
-  PDFFile   := "doc/manual_typo.pdf",
+  PDFFile   := "doc/manual.pdf",
   # the path to the .six file used by GAP's help system
-  SixFile   := "doc/manual.six",
+  SixFile   := "doc/manual_typo.six",
   # a longer title of the book, this together with the book name should
   # fit on a single text line (appears with the '?books' command in GAP)
   # LongTitle := "Elementary Divisors of Integer Matrices",
